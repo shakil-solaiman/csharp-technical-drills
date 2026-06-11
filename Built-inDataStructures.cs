@@ -117,6 +117,129 @@ internal class DataStructureProgram
         }
 
 
+        //Hash Set -- Unordered collection of unique values, O(1) lookups.
+
+        Console.WriteLine("\n\nHash Set Declaration 01: ");
+
+        var hSet = new HashSet<int> {5,2,6,3};
+
+        hSet.Add(10);
+
+        foreach(var print in hSet)
+        {
+            Console.WriteLine(print);
+        }
+
+        if(hSet.Contains(10))
+        {
+            Console.WriteLine("\nFound it!");
+        }
+
+        else
+        {
+            Console.WriteLine("\nSorry! Not found.");
+        }
+
+
+        //Queue -- FIFO (First-In, First-Out).
+        
+        var queue = new Queue<string>();
+
+        queue.Enqueue("First");
+        queue.Enqueue("Second");
+        queue.Enqueue("Third");
+
+        Console.WriteLine("\n\nQueue Declaration 01: After Enqueue - ");
+
+        foreach(var print in queue)
+        {
+            Console.WriteLine(print);
+        }
+
+        queue.Dequeue();
+
+        //queue.Peek();    // "second" (doesn't remove)
+
+        Console.WriteLine("\n\nQueue Declaration 02: After Dequeue - ");
+
+        foreach(var print in queue)
+        {
+            Console.WriteLine(print);
+        }
+
+        
+        //Stack -- LIFO (Last-In, First-Out).
+
+        Console.WriteLine("\n\nStack Declaration 01: ");
+
+
+        var stack = new Stack<int>();
+
+        stack.Push(5);
+        stack.Push(10);
+        stack.Push(15);
+        stack.Push(20);
+
+        stack.Pop();
+
+        //stack.Peek(); // 1 (doesn't remove)
+
+        foreach(var print in stack)
+        {
+            Console.WriteLine(print);
+        }
+
+
+
+        //LinkedList -- Doubly-linked list; efficient insertions/deletions anywhere.
+
+        Console.WriteLine("\n\nLinked list declaration 01: ");
+
+        var linkedList = new LinkedList<int>();
+
+        linkedList.AddLast(10);
+        linkedList.AddFirst(5);
+
+        linkedList.AddAfter(linkedList.First, 15);
+
+
+        foreach(var number in linkedList)
+        {
+            Console.WriteLine(number);
+        }
+
+
+        //Sorted Dictionary / Sorted List -- Like Dictionary but sorted by key.
+        // Iterates in alphabetical order
+
+        Console.WriteLine("\n\nSorted Dictionary Declaration 01: ");
+
+        var sortedDict = new SortedDictionary<string,int>
+        {
+            {"Mango", 5},
+            {"Apple", 10},
+            {"Lichi", 15}
+        };
+
+        foreach(var print in sortedDict)
+        {
+            Console.WriteLine(print);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
      }
