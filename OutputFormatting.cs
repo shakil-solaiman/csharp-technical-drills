@@ -18,6 +18,8 @@ class OutputFormattingProgram
 
         Console.WriteLine($"Addition: " + result1);
 
+        Console.WriteLine($"Addition: {result1}");
+
 
         //Formatting 02
 
