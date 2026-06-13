@@ -15,6 +15,8 @@ class WhereProgram
 {
     static void Main(string[] args)
     {
+        //Where — Filter
+        
         // Problem 01
 
         var numbers = new List<int> {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
